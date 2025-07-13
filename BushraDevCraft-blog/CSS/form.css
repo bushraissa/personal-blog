@@ -1,0 +1,129 @@
+
+.formpage{
+   
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 35px 1200px 45px ;
+    grid-template-areas:
+    "hd"
+    "page"
+    "subcont"
+    "ft" ;
+    }
+    .formpage{
+        grid-area: frpg;
+      
+ 
+    }
+    .subform{
+        grid-area: subf;
+        display: flex;
+        background-color: #f1e5da;
+        justify-content: center;
+        border: rgb(233, 223, 223) solid 1px;
+        padding: 70px 50px;
+    }
+    .Subcotainer{
+            grid-area: subcont;
+            display: grid;
+            gap: 20px;
+            padding:10px 10px;
+            background-color: #EDD8C5;
+            justify-content: center;
+            grid-template-columns: 100%;
+            grid-template-rows: 300px 450px;
+               grid-template-areas:
+               "frpg"
+               "subf"
+             ;
+        
+    }
+    .formstyle{
+        font-size: 20px;
+        gap: 10px;
+        font-family: "Coming Soon", cursive;
+        
+        
+    }
+  
+    .subscribe{
+        font-size: 16px;
+        gap: 10px;
+        font-family: "Coming Soon", cursive;
+        text-align: center;
+        
+    }
+    #fname, #lname, #email{
+        width: 90vw;
+        padding: 1px;
+        height: 30px;
+    }
+   
+
+    
+/** medium screen**/
+@media (min-width: 768px){
+    .formpage{
+        display: grid;
+       
+        grid-template-columns: 150px 300px;
+        grid-template-rows: 150px 1fr 65px ;
+        grid-template-areas:
+        "hd hd hd hd hd hd hd hd"
+        "page subcont subcont subcont subcont subcont subcont subcont"
+        "ft ft ft ft ft ft ft ft"  ;
+    }
+    .Subcotainer{
+        grid-area: subcont;
+        display: grid;
+        gap: 20px;
+        background-color: #EDD8C5;
+        justify-content: center;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(2,1fr);
+           grid-template-areas:
+           "frpg"
+           "subf"
+         ;
+        }
+    
+      
+        .subscribe{
+            font-size: 22px;
+           
+        }
+}
+
+/** Large Screen**/
+    
+@media (min-width:1024px){
+
+    .formpage{
+        display: grid;
+       
+        grid-template-columns: 300px 600px;
+        grid-template-rows: 200px 1fr 65px ;
+        grid-template-areas:
+        "hd hd hd hd hd hd hd hd"
+        "page subcont subcont subcont subcont subcont subcont subcont"
+        "ft ft ft ft ft ft ft ft" ;
+    }
+    .Subcotainer{
+        grid-area: subcont;
+        display: grid;
+        gap: 20px;
+        background-color: #EDD8C5;
+        justify-content: center;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(2,1fr);
+           grid-template-areas:
+           "frpg"
+           "subf"
+         ;
+        }
+        .subscribe{
+            font-size: 25px;
+           
+        }
+}

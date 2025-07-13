@@ -1,0 +1,186 @@
+
+
+
+.bloglayout{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 100px 35px 1fr 45px ;
+    grid-template-areas:
+    "hd"
+    "page"
+    "blgs"
+    "ft" ;
+    }
+
+
+    .blogs{
+   
+        background-color: #EDD8C5 ;
+        grid-area: blgs;
+        
+        display: grid;
+        font-size: large;
+        font-family: "Coming Soon", cursive;
+        grid-gap:15px;
+        padding: 10px;
+        
+        grid-template-rows: 100px repeat(6, 1fr);
+        justify-items: center;
+        grid-template-areas: 
+       "bghd "
+       "bg1 "
+       "bg2 "
+       "bg3 "
+       "bg4 "
+       "bg5 "
+       "bg6 "
+
+        ;
+    }
+    
+
+.bloghd{
+    grid-area: bghd;
+      font-size:large ;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      text-align: center;
+        
+     
+    
+}
+figure {
+    border: 1px #f8f3f3 solid;
+    padding: 2px;
+    margin: auto;
+  }
+  figcaption {
+    background-color: #5E4C6E;
+    color:#EDD8C5 ;
+    font-style: italic;
+    padding: 1px;
+    text-align: center;
+  }
+.imgblog{
+    
+    width: 100%;
+}
+#blg1{
+    grid-area: bg1;
+}
+    
+   
+
+#blg2{
+    grid-area: bg2;
+   
+}
+#blg3{
+    grid-area: bg3;
+}
+#blg4{
+    grid-area: bg4;
+}
+#blg5{
+    grid-area: bg5;
+}
+#blg6{
+    grid-area: bg6;
+}
+
+
+
+
+.myblog{
+    background-color: #f1e5da;
+    
+    width: 92%;
+    padding: 3px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    text-align: center;
+    
+   
+}
+.myservices:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+
+
+/** medium screen**/
+@media (min-width: 768px){
+    .bloglayout{
+        display: grid;
+       
+        grid-template-columns: 150px 300px;
+        grid-template-rows: 150px 1fr 65px ;
+        grid-template-areas:
+        "hd hd hd hd hd hd hd hd"
+        "page blgs blgs blgs blgs blgs blgs blgs"
+        "ft ft ft ft ft ft ft ft" ;
+        
+        }
+
+        .blogs{
+   
+            background-color: #EDD8C5 ;
+            grid-area: blgs;
+           
+            display: grid;
+            font-size: large;
+            font-family: "Coming Soon", cursive;
+            grid-gap:15px;
+            padding: 10px;
+            grid-template-columns:50% 50%;
+            grid-template-rows: 100px repeat(3, 1fr);
+            justify-items: center;
+            grid-template-areas: 
+           "bghd bghd"
+           "bg1 bg4"
+           "bg2 bg5"
+           "bg3 bg6"
+       
+    
+            ;
+        }
+}
+
+
+/** Large Screen**/
+    
+@media (min-width:1024px){
+
+    .bloglayout{
+        display: grid;
+        grid-template-columns: 300px 600px;
+        grid-template-rows: 200px 100% 65px ;
+        grid-template-areas:
+       "hd hd hd hd hd hd hd hd"
+        "page blgs blgs blgs blgs blgs blgs blgs"
+        "ft ft ft ft ft ft ft ft" ;
+    }
+    
+
+        .blogs{
+   
+            background-color: #EDD8C5 ;
+            grid-area: blgs;
+           
+            display: grid;
+            font-size: large;
+            font-family: "Coming Soon", cursive;
+            grid-gap:15px;
+            padding: 10px;
+            grid-template-columns:33% 33% 33%;
+            grid-template-rows: 100px repeat(2, 1fr);
+            justify-items: center;
+            grid-template-areas: 
+           "bghd bghd bghd"
+           "bg1 bg2 bg3"
+           "bg4 bg5 bg6"
+           
+            ;
+        }
+}

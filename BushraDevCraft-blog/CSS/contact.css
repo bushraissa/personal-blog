@@ -1,0 +1,130 @@
+.myicons{
+    width:50px ;
+    border-radius: 50px;
+}
+.myicons:hover{
+    width:60px;
+}
+
+.socialbox{
+   
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 35px 1fr 45px ;
+    grid-template-areas:
+    "hd"
+    "page"
+    "socont"
+    "ft" ;
+    }
+    
+
+    .socialcont{
+        grid-area: socont;
+        display: grid;
+        font-family: "Coming Soon", cursive;
+        grid-template-rows: 170px 70px 1fr ;
+        gap: 10px;
+        padding:10px 10px;
+        background-color: #EDD8C5;
+        justify-content: center;
+        border: #EDD8C5 solid 2px;
+        grid-template-areas: 
+        "perImage"
+        "soc"
+        "contfor"
+        ;
+    }
+    .social{
+        grid-area: soc;
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        gap: 30px;
+        justify-content: center;
+
+    }
+    .contactform{
+        grid-area: contfor;
+        
+    }
+    #message{
+        width: 90vw;
+        height: 200px;
+    }
+      
+    
+/** medium screen**/
+@media (min-width: 768px) {
+    .socialbox{
+        display: grid;
+       
+        grid-template-columns: 150px 300px;
+        grid-template-rows: 150px 1fr 65px ;
+        grid-template-areas:
+        "hd hd hd hd hd hd hd hd"
+        "page socont socont socont socont socont socont socont"
+        "ft ft ft ft ft ft ft ft"  ;
+    }
+    
+    .socialcont{
+        grid-area: socont;
+        display: grid;
+        font-family: "Coming Soon", cursive;
+        grid-template-rows: 305px 60px 1fr ;
+        gap: 10px;
+        padding:50px 50px;
+        background-color: #EDD8C5;
+        justify-content: center;
+        border: #EDD8C5 solid 2px;
+        grid-template-areas: 
+        "perImage"
+        "soc"
+        "contfor"
+        ;
+    }
+    #message{
+        width: 90vw;
+        height: 200px;
+    }
+   
+}
+
+/** Large Screen**/
+    
+@media (min-width:1024px){
+
+    .socialbox{
+        display: grid;
+       
+        grid-template-columns: 300px 600px;
+        grid-template-rows: 200px 1fr 65px ;
+        grid-template-areas:
+        "hd hd hd hd hd hd hd hd"
+        "page socont socont socont socont socont socont socont"
+        "ft ft ft ft ft ft ft ft" ;
+    }
+    .socialcont{
+        grid-area: socont;
+        display: grid;
+        font-family: "Coming Soon", cursive;
+        grid-template-rows: 400px 60px 1fr ;
+        gap: 10px;
+        padding:50px 50px;
+        background-color: #EDD8C5;
+        justify-content: center;
+        border: #EDD8C5 solid 2px;
+        grid-template-areas: 
+        "perImage"
+        "soc"
+        "contfor"
+        ;
+    }
+    #message{
+        width: 90vw;
+        height: 200px;
+    }
+   
+
+}

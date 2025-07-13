@@ -1,0 +1,174 @@
+
+
+
+.servicelayout{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 100px 35px 1fr 45px ;
+    grid-template-areas:
+    "hd"
+    "page"
+    "myser"
+    "ft" ;
+    }
+
+
+    .services{
+   
+        background-color: #EDD8C5 ;
+        grid-area: myser;
+        display: grid;
+        font-size: large;
+        font-family: "Coming Soon", cursive;
+        grid-gap:15px;
+        padding: 10px;
+        grid-template-columns:100%;
+        grid-template-rows: 80px repeat(5, 1fr);
+        justify-items: center;
+        grid-template-areas: 
+        "serhd"
+        "zero"
+        "one" 
+        "two "
+        "three"
+         "four" 
+         "five"
+        ;}
+    
+
+.servicehd{
+    grid-area: serhd;
+   font-size:larger ;
+    
+}
+.imgcard{
+    border-radius: 10%;
+    width: 97%;
+}
+#cont0{
+    grid-area: zero;
+   
+}
+#cont1{
+    grid-area: one;
+   
+}
+#cont2{
+    grid-area: two;
+}
+#cont3{
+    grid-area: three;
+}
+#cont4{
+    grid-area: four;
+}
+#cont5{
+    grid-area: five;
+}
+.serhd3{
+    font-size: 18px;
+}
+
+.myservices{
+    background-color: #f1e5da;
+    
+    width: 92%;
+    padding: 3px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 10px;
+    text-align: center;
+    
+   
+}
+.myservices:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.mypic{
+    height:219x;
+    width: 120px;
+    border-radius: 50px;
+}
+
+
+/** medium screen**/
+@media (min-width: 768px) {
+    .servicelayout{
+        display: grid;
+       
+        grid-template-columns: 150px 300px;
+        grid-template-rows: 150px 1fr 65px ;
+        grid-template-areas:
+        "hd hd hd hd hd hd hd hd"
+        "page myser myser myser myser myser myser myser"
+        "ft ft ft ft ft ft ft ft" ;
+    }
+    .services{
+
+        grid-area: myser;
+        display: grid;
+        background-color: #EDD8C5 ;
+        font-size: large;
+        font-family: "Coming Soon", cursive;
+        grid-gap:15px;
+        padding: 10px;
+        grid-template-columns:70% 30%;
+        grid-template-rows: 80px  repeat(5,1fr);
+        
+        justify-items: center;
+        grid-template-areas: 
+        "serhd serhd "
+        "one  zero"
+         " two zero"
+         " three zero"
+         " four zero"
+         " five zero"
+        ;}
+        .mypic{
+            height:274px;
+            width: fit-content;
+            border-radius: 50px;
+        }
+}
+
+
+/** Large Screen**/
+    
+@media (min-width:1024px){
+
+    .servicelayout{
+        display: grid;
+        grid-template-columns: 300px 600px;
+        grid-template-rows: 200px 1fr 65px ;
+        grid-template-areas:
+        "hd hd hd hd hd hd hd hd"
+        "page myser myser myser myser myser myser myser"
+        "ft ft ft ft ft ft ft ft" ;
+    }
+    .services{
+
+        grid-area: myser;
+        display: grid;
+        background-color: #EDD8C5 ;
+        font-size: large;
+        font-family: "Coming Soon", cursive;
+        grid-gap:15px;
+        padding: 10px;
+        grid-template-columns:30% 30% 40%;
+        grid-template-rows: 80px  repeat(3,1fr);
+        
+        justify-items: center;
+        grid-template-areas: 
+        "serhd serhd serhd"
+        "one  two zero"
+        
+        " three four zero"
+        
+         " five five zero"
+        ;}
+        .mypic{
+            width:fit-content ;
+            height:365px;
+            border-radius: 50px;
+        }
+}

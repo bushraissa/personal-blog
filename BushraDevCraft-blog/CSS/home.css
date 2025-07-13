@@ -1,0 +1,158 @@
+
+
+
+.box{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 35px 1fr 45px ;
+    grid-template-areas:
+    "hd"
+    "page"
+    "cont"
+    "ft" ;
+    }
+
+.visit{
+width: 200px;
+height: 70px;
+font-size: 25px;
+font-family: "Dancing Script", cursive;
+background-color: #5E4C6E;
+color:#EDD8C5 ;
+text-align: center;
+padding-top: 10px;
+}
+.visit:hover{
+    background-color: #292031;
+    color:#EDD8C5 ; 
+}
+
+.content{
+    grid-area: cont;
+    display: grid;
+    font-family: "Coming Soon", cursive;
+     grid-template-rows: 30%  70%;
+     font-size: large;
+   
+    background-color: #EDD8C5;
+    justify-content: center;
+    border: #EDD8C5 solid 2px;
+    grid-template-areas: 
+    "perImage"
+    "welcome "
+    ;
+}
+
+
+.welcoming{
+    grid-area: welcome;
+    height: 100%;
+    width:100%;
+    text-align: center;
+}
+
+.photo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+#icon{
+    grid-area: perImage;
+    width: 150px;
+    position:relative; 
+    border-radius: 50%;
+    border: #292031 solid 2px;
+    
+}    
+ 
+.socialcont {
+    display: flex;
+    flex-direction: column;
+   text-align: center;
+   
+}
+
+/** Medium Screen**/
+ 
+@media (min-width:  768px) {
+
+    .box{ 
+        display: grid;
+       
+        grid-template-columns: 150px 300px;
+        grid-template-rows: 200px 1fr 65px ;
+        grid-template-areas:
+        "hd hd hd hd hd hd hd hd"
+        "page cont cont cont cont cont cont cont "
+        "ft ft ft ft ft ft ft ft" ;
+        }
+
+            
+        .content{
+            grid-area: cont;
+            display: grid;
+            font-size:larger;
+            grid-template-rows:400px 500px;
+            background-color: #EDD8C5;
+            border: #EDD8C5 solid 2px;
+            grid-template-areas: 
+            "perImage"
+            "welcome " 
+            ;
+        }
+        #icon{
+            grid-area: perImage;
+            width: 300px;
+            border-radius: 50%;
+            
+        }
+   
+
+      
+}
+        
+
+/** Large Screen**/
+    
+@media (min-width:1024px){
+
+    .box{
+      
+        display: grid;
+        grid-template-columns: 300px 600px;
+        grid-template-rows: 250px 1fr 65px ;
+         grid-template-areas:
+        "hd hd hd hd hd hd hd hd"
+        "page cont cont cont cont cont cont cont "
+        "ft ft ft ft ft ft ft ft" ;
+        }
+
+  
+      
+    
+        .content{
+            grid-area: cont;
+            display: grid;
+            font-size: 30px;
+            grid-template-rows:400px 500px;
+            background-color: #EDD8C5;
+            justify-content: center;
+            border: #EDD8C5 solid 2px;
+            grid-template-areas: 
+            "perImage"
+            "welcome " 
+            ;
+        }
+        #icon{
+            grid-area: perImage;
+            width: 400px;
+            border-radius: 50%;
+            
+        }
+   
+
+}
+
+        
